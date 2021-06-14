@@ -262,6 +262,11 @@ html {
     background-size: cover;
 }
 
+.hidden{
+visibility:hidden;
+    heigt:0;
+}
+
 
 /* ANIMATIONS---------------------------------------------------------- */
 
