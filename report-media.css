@@ -1,0 +1,79 @@
+    @media(max-width:860px) {
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+        }
+        .customer-main img {
+            height: auto;
+            display: none;
+        }
+    }
+    
+    @media(max-width:1110px) {
+        .showcase .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+        }
+        .showcase-form {
+            justify-self: flex-end;
+        }
+        .showcase-text {
+            margin-top: 30px;
+        }
+        .customer-main {
+            height: auto;
+            /* padding: auto 0px; */
+        }
+        .customer-care .container {
+            padding: 0 20px;
+        }
+        .customer-care {
+            height: auto;
+        }
+        /* .customer-card {
+            margin-bottom: 10px;
+        } */
+        .customer-care::before,
+        .customer-care::after {
+            height: auto;
+        }
+    }
+    
+    @media(max-width:664px) {
+        .flex {
+            flex-direction: column;
+        }
+        .logo {
+            font-size: 1px;
+        }
+        .navbar {
+            height: auto;
+            font-size: 1rem;
+        }
+        /* .customer-care {
+            height: auto;
+        } */
+    }
+    
+    @media(max-width:594px) {
+        .navbar {
+            font-size: 1rem;
+        }
+        .navbar .container {
+            padding: 0;
+        }
+    }
+    
+    @media(max-width:525px) {
+        .showcase-form {
+            width: auto;
+        }
+        .customer-text h2 {
+            font-size: 2rem;
+        }
+        .customer-text p {
+            font-size: 1.3rem;
+        }
+    }
