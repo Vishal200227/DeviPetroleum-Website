@@ -23,7 +23,8 @@
             .showcase-form {
                 justify-self: flex-end;
             }
-            .showcase-text {
+            
+                {
                 margin-top: 30px;
             }
             .customer-main {
@@ -110,9 +111,9 @@
             .showcase-form {
                 width: auto;
             }
-                .showcase-text h1{
-                font-size:3.5rem; 
-                }
+               
+                 
+               
                         
         }
         
