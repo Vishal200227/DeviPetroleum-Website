@@ -80,6 +80,9 @@
                 width: auto;
                     height: auto;
             }
+                .showcase-form .card{
+                height:auto;
+                }
                 
             .customer-text h2 {
                 font-size: 2rem;
