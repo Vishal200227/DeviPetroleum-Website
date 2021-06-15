@@ -8,6 +8,9 @@
                 height: auto;
                 display: none;
             }
+                .navbar .logo{
+                font-size:1.3rem;
+                }
         }
         
         @media(max-width:1110px) {
