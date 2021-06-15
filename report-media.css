@@ -100,6 +100,10 @@
             .showcase-form {
                 width: auto;
             }
+                .showcase-text h1{
+                font-size:3rem; 
+                }
+                        
         }
         
         @media(max-width:372px) {
