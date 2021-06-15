@@ -10,7 +10,7 @@
             }
                 .navbar .logo{
                 font-size:1.3rem;
-                        margin: 5px 0;
+                        margin: 10px 0;
                 }
         }
         
@@ -39,6 +39,7 @@
             .navbar ul {
                 background-color: rgba(0, 0, 0, 0.2);
                 border-radius: 15px;
+                    margin:5px 0px;
             }
             /* .customer-card {
             margin-bottom: 10px;
