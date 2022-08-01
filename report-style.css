@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ :root {
+    --primary-color: #02164f;
+    --secondary-color: #f37022;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.55;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* ----------------------------NAVBAR------------------------------------------ */
+
+.navbar {
+    background-color: var(--primary-color);
+    color: white;
+    height: 60px;
+    position: sticky;
+    top: 0px;
+    z-index: 200;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar .logo {
+    font-size: 2rem;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 5px;
+    padding: 4px 12px;
+}
+
+.navbar a:hover {
+    border-bottom: 2px solid var(--secondary-color);
+    /* transition-duration: 0.8s; */
+}
+
+.navbar a:active {
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.navbar .flex {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.showcase {
+    background-color: var(--secondary-color);
+    /* height: 400px; */
+    position: relative;
+    min-height: 500px;
+}
+
+.showcase-text h1 {
+    line-height: 60px;
+}
+
+.showcase .container {
+    justify-content: center;
+    align-items: center;
+}
+
+.showcase .grid {
+    grid-template-columns: 55% 45%;
+    overflow: visible;
+}
+
+.showcase-form {
+    position: relative;
+    top: 60px;
+    z-index: 100;
+    animation: slideInFromRight 0.8s ease-in;
+}
+
+#textarea-1 {
+    width: 100%;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    height: 170px;
+    padding: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: bolder;
+    /* outline: none; */
+}
+
+.textarea-main {
+    margin: 0px !important;
+}
+
+.showcase-form h2 {
+    padding: 0 30px;
+    margin: 15px 0;
+}
+
+.showcase-form .btn input {
+    margin: 15px 30px;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: whitesmoke;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
+}
+
+.showcase::after {
+    content: '';
+    height: 60px;
+    background-color: white;
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    right: 0;
+    transform: skewY(-2deg);
+    z-index: 1;
+}
+
+.showcase-text {
+    animation: slideInFromLeft 0.8s ease-in;
+}
+
+.footer {
+    background-color: black;
+    height: 350px;
+    color: #fff;
+    padding-top: 78px;
+}
+
+.footer .address h3,
+.footer .contact h3,
+.footer .socials h3 {
+    margin-bottom: 50px;
+}
+
+.footer .socials a {
+    color: white;
+    margin: 10px;
+}
+
+.socials i:hover {
+    transform: scale(1.25);
+    transition-duration: 0.2s;
+}
+
+.customer-care {
+    height: 850px;
+    /* background-color: pink; */
+    margin-top: 100px;
+    position: relative;
+}
+
+.customer-care::after {
+    content: '';
+    height: 60px;
+    background-color: white;
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    right: 0;
+    transform: skewY(2deg);
+    z-index: 1;
+}
+
+.customer-care::before {
+    content: '';
+    height: 60px;
+    background-color: white;
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    right: 0;
+    transform: skewY(-2deg);
+    z-index: 1;
+}
+
+.hidden {
+    visibility: hidden;
+    height: 0;
+}
+
+.customer-main img {
+    /* border: 1px solid grey; */
+    border-radius: 15px;
+}
+
+.customer-text {
+    /* border: 1px solid grey; */
+    border-radius: 15px;
+    padding: 5px 20px;
+    background-color: rgba(243, 112, 34, 0.5);
+}
+
+.customer-text:hover {
+    background-color: rgba(243, 112, 34, 1);
+    transition-duration: 0.4s;
+}
+
+
+/* ANIMATIONS---------------------------------------------------------- */
+
+
+/* ----------------UTILITIES------------------------ */
+
+.container {
+    padding: 0 90px;
+    /* margin: 0 auto;
+max-width: 1000px; */
+    overflow: auto;
+    height: 100%;
+}
+
+.flex {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+.card {
+    background-color: white;
+    width: 500px;
+    height: 650px;
+    border-radius: 10px;
+    box-shadow: 0 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.form-control {
+    padding: 10px 30px;
+    margin: 10px 0;
+}
+
+.form-control input {
+    padding: 5px 0px;
+    font-size: 1rem;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.form-control input:focus {
+    outline: none;
+}
+
+.background {
+    background-size: cover;
+    width: 80%;
+    justify-self: center;
+    height: inherit;
+    background-color: rgba(2, 22, 79, 0.5);
+    mix-blend-mode: multiply;
+}
+
+.background:hover {
+    background-color: rgba(2, 22, 79, 1);
+    transition-duration: 0.4s;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-underline {
+    text-decoration: underline;
+    /* border-bottom: 1px solid white; */
+}
+
+.stats-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bordered {
+    border: 1px solid #fff;
+    border-radius: 15px;
+}
+
+.des {
+    width: 300px;
+    padding: 15px 20px;
+    background-color: var(--secondary-color);
+    overflow: visible;
+    z-index: 99;
+    box-shadow: 0 5px 1px rgba(0, 0, 0, 0.2);
+    border: none;
+}
+
+.sublead {
+    font-size: 20px;
+}
+
+.min-lead {
+    font-size: 1.22rem;
+}
+
+.lead {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.my-2 {
+    margin: 50px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+.customer-main {
+    height: 200px;
+    margin: 15px 0;
+}

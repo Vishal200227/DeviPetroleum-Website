@@ -1,0 +1,221 @@
+@media(max-width:860px) and (min-width:737px) {
+    .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .customer-main img {
+        height: auto;
+        display: none;
+    }
+    .navbar .logo {
+        font-size: 1.3rem;
+        margin: 10px 0;
+    }
+    .customer-text h2 {
+        text-align: center;
+    }
+}
+
+@media(max-width:1110px) {
+    .showcase .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .showcase-form {
+        justify-self: flex-end;
+    }
+    {
+        margin-top: 30px;
+    }
+    .customer-main {
+        height: auto;
+        /* padding: auto 0px; */
+    }
+    .customer-care .container {
+        padding: 0 20px;
+    }
+    .customer-care {
+        height: auto;
+    }
+    .navbar ul {
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 15px;
+        margin: 5px 0px;
+    }
+    /* .customer-card {
+    margin-bottom: 10px;
+} */
+    .customer-care::before,
+    .customer-care::after {
+        height: auto;
+    }
+}
+
+@media(max-width:664px) {
+    .flex {
+        flex-direction: column;
+    }
+    .logo {
+        font-size: 1px;
+    }
+    .navbar {
+        height: auto;
+        font-size: 1rem;
+    }
+    /* .customer-care {
+    height: auto;
+} */
+}
+
+@media(max-width:594px) {
+    .navbar {
+        font-size: 1rem;
+    }
+    .navbar .container {
+        padding: 0;
+    }
+}
+
+@media(max-width:525px) {
+    .showcase-form {
+        width: auto;
+        height: auto;
+        justify-self: center;
+    }
+    .showcase-form .card {
+        height: auto;
+    }
+    .customer-text h2 {
+        font-size: 2rem;
+    }
+    .customer-text p {
+        font-size: 1.3rem;
+    }
+    .container {
+        padding: 0px 20px;
+    }
+    .showcase-text h1 {
+        margin-top: 20px;
+    }
+    .showcase-form textarea {
+        height: 10px;
+    }
+}
+
+@media(max-width:435px) and (min-width:372px) {
+    .navbar {
+        height: auto;
+    }
+    .navbar ul a {
+        /* font-size: 0.7rem; */
+        padding: 0;
+        margin: 0 9px;
+        text-align: center;
+    }
+    .navbar li {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    /* .showcase-form {
+        width: auto;
+    } */
+    .showcase-text h1 {
+        font-size: 3rem;
+    }
+}
+
+@media(max-width:372px) {
+    .navbar a {
+        margin: 0 2px;
+        font-size: 0.9rem;
+    }
+    .showcase-text h1 {
+        font-size: 3rem;
+    }
+    .navbar li {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar {
+        height: auto;
+    }
+    .showcase-form h2 {
+        font-size: 2rem;
+    }
+    .customer-care h2 {
+        font-size: 2rem;
+    }
+    .customer-text h2 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    .customer-text p {
+        /* text-align: justify; */
+        line-height: 30px;
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width:350px) {
+    .navbar ul li {
+        font-size: ;
+        margin: 0 1px !important;
+        padding: 0;
+    }
+}
+
+@media(max-width:362px) {
+    .navbar ul {
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .navbar .logo {
+        font-size: 1.6rem;
+    }
+    .navbar ul a {
+        font-size: 1rem;
+    }
+    .showcase-text h1 {
+        font-size: 2.8rem;
+    }
+    .showcase-text p {
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width:737px) and (min-width:663px) {
+    .navbar .container {
+        padding: 0 10px;
+    }
+    .navbar .logo {
+        font-size: 1.7rem;
+    }
+    .customer-main img {
+        display: none;
+    }
+    .customer-main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .customer-text h2 {
+        text-align: center;
+    }
+}
+
+@media(max-width:662px) {
+    .customer-main img {
+        display: none;
+    }
+    .customer-main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .customer-text h2 {
+        text-align: center;
+    }
+}
